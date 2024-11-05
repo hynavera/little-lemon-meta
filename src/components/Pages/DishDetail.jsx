@@ -11,6 +11,19 @@ const DishDetail = () => {
     .then(data => setDish(data.dishes))
   }, [params.id])
 
+  const [quantity, setQuantity] = useState(1);
+  const handleIncrease = () => {
+    setQuantity(quantity + 1)
+  }
+  const handleDecrease = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1)
+    }
+  }
+
+  const [selectedAddOn, setSelectedAddOn] = useState(0);
+
+
   const location = useLocation()
   const search = location.state?.search || ""
 
@@ -32,6 +45,7 @@ const DishDetail = () => {
       </div>
       <div className='order-layout'>
         {dish ? (
+          <>
           <div className='order-dish'>
             <div className="card-img">
               <img src={dish.image}/>
@@ -44,8 +58,14 @@ const DishDetail = () => {
               </div>
             </div>
           </div>
-        ) : ""}
         <div className="order-custo">
+          <h3>Quantity</h3>
+          <div className='order-qty'>
+            <button onClick={handleDecrease}>-</button>
+            <div className='qty-num'>{quantity}</div>
+            <button onClick={handleIncrease}>+</button>
+          </div>
+          <br />
           <h3>Add</h3>
           <table>
             <tbody>
@@ -53,26 +73,45 @@ const DishDetail = () => {
               <td>Feta</td>
               <td>$ 1.00</td>
               <td>
-                <input type="radio" name='add' />
+                <input type="radio" name='add' onChange={() => setSelectedAddOn(1)}
+                />
               </td>
             </tr>
             <tr>
               <td>Parmesan</td>
-              <td>$ 1.00</td>
+              <td>$ 1.50</td>
               <td>
-                <input type="radio" name='add'/>
+                <input type="radio" name='add' onChange={() => setSelectedAddOn(1.5)}
+                /> 
               </td>
             </tr>
             <tr>
               <td>Dressing</td>
-              <td>$ 1.00</td>
+              <td>$ 2.00</td>
               <td>
-                <input type="radio" name='add'/>
+                <input type="radio" name='add' onChange={() => setSelectedAddOn(2)}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>No adding</td>
+              <td>$ 0</td>
+              <td>
+                <input type="radio" name='add' defaultChecked onChange={() => setSelectedAddOn(0)}
+                />
               </td>
             </tr>
             </tbody>
           </table>
+          <br />
+          <div className="order-total">
+            <h3>Total ($)</h3>
+            <div>{quantity * dish.price + selectedAddOn}</div>
+          </div>
         </div>
+             </>   
+                ) : ""}
+
       </div>
     </div>
     </>
