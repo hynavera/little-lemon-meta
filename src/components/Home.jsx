@@ -12,16 +12,17 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   const specials = [
     {name: 'Greek Salad', price: '12.99', description: 'The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. ',
-      image: imgSalad
+      image: imgSalad, id: "greek-salad"
     },
-    {name: 'Brushetta', price: '7.99', description: 'Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. ',
-      image: imgBrushetta
+    {name: 'Bruschetta', price: '7.99', description: 'Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. ',
+      image: imgBrushetta, id: "bruschetta"
     },
     {name: 'Lemon Dessert', price: '5.99', description: 'This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.',
-      image: imgLemon
+      image: imgLemon, id: "lemon-dessert"
     },
     {name: 'Grilled Fish', price: '7.99', description: 'Salmon and firm, thick white fish like sea bass, red snapper, grouper and halibut are the best types of fish to grill because they are hearty. ',
-      image: "https://images.unsplash.com/photo-1615044088186-a2342db7b272?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3JpbGxlZCUyMGZpc2h8ZW58MHx8MHx8fDI%3D"
+      image: "https://images.unsplash.com/photo-1615044088186-a2342db7b272?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3JpbGxlZCUyMGZpc2h8ZW58MHx8MHx8fDI%3D",
+      id: "grilled-fish"
     },
   ]
   const testimonials = [
@@ -67,7 +68,9 @@ export default function Home() {
                   <div className='card-description'>
                     <p>{dish.description}</p>
                   </div>
-                  <button>Order Now</button>
+                  <button>
+                    <Link to={`/menu/${dish.id}`}>Order Now</Link>
+                  </button>
                 </div>
               </div>
             ))}

@@ -97,6 +97,10 @@ p {
 /* Specials */
 .specials {
   margin-top: 50px;
+  .btn-yes {
+    background-color: var(--Accent-2);
+    color: aliceblue;
+  }
 }
 .special-dish {
   margin-top: 30px;
@@ -163,6 +167,10 @@ p {
   background-color: var(--Accent-1);
   font-size: 16px;
   font-weight: 700;
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 /* Testimonials */

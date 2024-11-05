@@ -40,3 +40,21 @@
   color: white;
 }
 
+/* ORDER */
+.order-layout {
+  display: flex;
+  margin-top: 20px;
+  gap: 10%;
+  padding: 20px;
+}
+.order-dish {
+  width: 50%;
+  .card-img {
+    border-radius: 16px;
+    overflow: hidden;
+    height: 50vh;
+  }
+  .dish-info {
+    margin-top: 20px;
+  }
+}
