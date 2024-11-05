@@ -5,7 +5,7 @@ import { useSearchParams, Link } from 'react-router-dom';
 const Menu = () => {
   const [dishes, setDishes] = useState([]);
   useEffect(() => {
-    fetch("/api/dishes")
+    fetch(`/api/dishes`)
     .then(res => res.json())
     .then((data => setDishes(data.dishes)))
   }, [])
@@ -16,11 +16,10 @@ const Menu = () => {
 
   const specialDishes = displayedDishes.map(dish => (
     <div key={dish.name} className="dish-card">
-      <Link to={dish.name} 
+      <Link 
+        to={dish.id} 
         state={{
-          // search: `?${searchParams.toString()}`, type: typeFilter
-          search: searchParams, type: typeFilter
-
+        search: `?${searchParams.toString()}`, type: typeFilter
         }}
       >
         <div className="card-img">
@@ -29,7 +28,7 @@ const Menu = () => {
         <div className="card-info">
           <div className="card-name">
             <h3>{dish.name}</h3>
-            <div className='price'>{dish.price}</div>
+            <div className='price' style={{display: "flex", gap: "5px", alignItems: "baseline"}}><p>$</p>{dish.price}</div>
           </div>
           <div className='card-description'>
             <p>{dish.description}</p>
@@ -57,7 +56,7 @@ const Menu = () => {
     <div className="page-head">
       <h1>Our Menu</h1>
     </div>
-    <div className="body menu">
+    <div className="page-body menu">
       <div>
         <h2>Expore our dishes</h2> <br />
         <div className='menu-tab'>

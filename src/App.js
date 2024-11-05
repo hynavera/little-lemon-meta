@@ -13,6 +13,7 @@ import About from './components/Pages/About';
 import Menu from './components/Pages/Menu';
 import Page from './components/Pages/Page';
 import "./server";
+import DishDetail from './components/Pages/DishDetail';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/menu' element={<Menu/>}/>
         <Route path='/page' element={<Page/>}/>
+        <Route path='menu/:id' element={<DishDetail/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>

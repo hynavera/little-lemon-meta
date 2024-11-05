@@ -45,7 +45,6 @@ p {
 }
 
 .body {
-  margin-top: 50px;
   padding: 10vh 16vw;
 }
 .special-head {
@@ -97,7 +96,7 @@ p {
 
 /* Specials */
 .specials {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .special-dish {
   margin-top: 30px;
@@ -169,6 +168,7 @@ p {
 /* Testimonials */
 .testimonials {
   background-color: #EDEFEE;
+  margin-top: 50px;
 }
 .testimonials > h2 {
   text-align: center;
