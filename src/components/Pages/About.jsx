@@ -27,7 +27,7 @@ const About = () => {
           <img src="https://cdn.pixabay.com/photo/2024/01/20/12/31/ai-generated-8520996_1280.png" alt=''/>
         </div>
         <div className="about-img" id='img2'>
-          <img src="https://cdn.pixabay.com/photo/2016/11/08/06/45/couple-1807617_1280.jpg" alt=''/>
+          <img src="https://cdn.pixabay.com/photo/2023/09/07/15/37/ai-generated-8239337_1280.png" alt=''/>
         </div>
       </div>
     </div>

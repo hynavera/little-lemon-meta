@@ -59,7 +59,7 @@ const Menu = () => {
     </div>
     <div className="body menu">
       <div>
-        <h2>Expore our dishes</h2>
+        <h2>Expore our dishes</h2> <br />
         <div className='menu-tab'>
           <button className={`btn-menu ${typeFilter === null ? "selected" : null}`} onClick={() => handleFilterChange("type", null)}
           >All</button>

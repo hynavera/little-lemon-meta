@@ -19,10 +19,13 @@ h1 {
 }
 h2 {
   font-family: "Markazi Text";
-  font-size: 40px;
+  font-size: 44px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+h3 {
+  font-size: 24px;
 }
 button {
   cursor: pointer;
@@ -77,7 +80,7 @@ button:hover {
 #check {
   display: none;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1400px) {
   .side_menu {
     display: inline-flex;
   }
@@ -116,7 +119,7 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   background-color: #EDEFEE;
-  padding: 80px 14vw 100px;
+  padding: 80px 14vw 120px;
   position: relative;
 }
 .logo-footer {

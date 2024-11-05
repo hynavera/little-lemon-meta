@@ -18,6 +18,7 @@ p {
   h1 {
     color: black;
     font-weight: bolder;
+    filter: drop-shadow(0 0 20px rgba(245, 207, 20, 1));
   }
 }
 .hero-info p {

@@ -1,5 +1,4 @@
 import React from 'react'
-import payImg from "../../assets/small_logo.png"
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
@@ -19,7 +18,7 @@ const Deposit = () => {
       <div className="form-body">
         <p className='pay-rule'>According to Little Lemon’s rules, you have to pay a deposit to reserve a table at our place. This helps us perfect our preparations to serve our guests in the most respectful way.</p>
         <div className="pay-img">
-          <img src={payImg}/>
+          <img src="https://images.unsplash.com/photo-1556742521-9713bf272865?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
         </div>
         <form action="" >
           <div className="form-group">

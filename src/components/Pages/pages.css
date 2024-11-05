@@ -1,13 +1,13 @@
 /* MENU */
 .dish-layout {
-  margin: 20px 0 50px 0;
+  margin: 30px 0 50px 0;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 30px;
 }
 .dish-layout .dish-card {
-  width: 260px;
+  width: 280px;
 }
 .dish-card > a {
   text-decoration: none;
@@ -25,6 +25,7 @@
   background: var(--Accent-2);
   font-size: 18px;
   font-weight: 700;
+  color: aliceblue;
 }
 .btn-menu:hover {
   box-shadow: 0 0 0 0;
@@ -33,6 +34,7 @@
 }
 .btn-menu.selected {
   background: var(--Accent-1);
+  color: black;
 }
 .btn-menu.selected:hover {
   color: white;
