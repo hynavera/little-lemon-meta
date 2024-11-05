@@ -1,6 +1,4 @@
 import React from 'react';
-import aboutImg1 from "../../assets/about1.jpg";
-import aboutImg2 from "../../assets/about2.jpg";
 
 
 const About = () => {
@@ -13,32 +11,23 @@ const About = () => {
       <div className='about-info'>
         <h2>Our Story</h2>
         <br />
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <br /> <br />
-        <h2>Values</h2>
-        <br />
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p>Immerse yourself in a culinary experience like no other at Little Lemon, a vibrant bar and small plates restaurant nestled in the heart of Dublin, Ireland.            
         </p>
         <br />
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p>With a captivating blend of Mediterranean cuisine, dramatic presentations, an extensive wine selection, and show-stopping cocktails, we invite you to indulge in a symphony of flavors that will leave you craving more.            
+        </p>
+        <br />
+        <p>At Little Lemon, we believe that great things come in small packages. Little Lemon is a Mediterranean-inspired cocktail and wine bar that takes pride in offering a tantalizing menu centered around fresh seafood, succulent meats, flavorful charcuterie, and locally sourced ingredients.
+        </p>
+        <br /><p>Our chefs skillfully craft dishes that highlight the natural flavors of high-quality ingredients, ensuring a remarkable dining experience. From ocean-fresh seafood to perfectly grilled meats, every bite at Little Lemon is a celebration of Mediterranean cuisine. Our commitment to using locally sourced ingredients guarantees freshness and showcases the region's best. Join us at Little Lemon and indulge in a memorable dining experience where Mediterranean flavors take center stage.
         </p>
       </div>
       <div className="about-img-contain">
         <div className="about-img" id='img1'>
-          <img src={aboutImg1} alt=''/>
+          <img src="https://cdn.pixabay.com/photo/2024/01/20/12/31/ai-generated-8520996_1280.png" alt=''/>
         </div>
         <div className="about-img" id='img2'>
-          <img src={aboutImg2} alt=''/>
+          <img src="https://cdn.pixabay.com/photo/2016/11/08/06/45/couple-1807617_1280.jpg" alt=''/>
         </div>
       </div>
     </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import heroimg from "../../assets/restauranfood.jpg";
 import { Link } from 'react-router-dom';
 
 const Congrats = () => {
@@ -11,7 +10,7 @@ const Congrats = () => {
         <p>No. #000001</p>
       </div>
       <div className="congrats-img">
-        <img src={heroimg} alt="" />
+        <img src="https://cdn.pixabay.com/photo/2014/09/17/20/26/restaurant-449952_1280.jpg" alt="" />
       </div>
       <h3>THANK YOU!</h3>
       <Link to="/">
