@@ -6,7 +6,7 @@ const Congrats = () => {
     <div className='success-page'>
       <h1>Congrats!</h1>
       <div>
-        <h3>You have made a reservation successfully.</h3>
+        <p>You have made a reservation successfully.</p>
         <b>No. #000001</b>
       </div>
       <div className="congrats-img">

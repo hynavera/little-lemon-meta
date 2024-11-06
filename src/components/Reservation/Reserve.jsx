@@ -32,7 +32,7 @@ const Reserve = () => {
   return (
     <div>
       <div className="page-body">
-        <h2>Restaurant Reservation</h2>
+        <h2>Reserve Tables</h2>
         <form action="" className='form-body' onSubmit={handleSubmit}>
           <div className='form-layout'>
           <div className="column-group">

@@ -43,30 +43,31 @@
 /* ORDER */
 .order-layout {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   margin-top: 20px;
   gap: 10%;
   padding: 20px;
 }
 .order-dish {
-  width: 50%;
+  width: 45%;
   .card-img {
     border-radius: 16px;
     overflow: hidden;
-    height: 50vh;
+    height: 40vh;
   }
   .dish-info {
     margin-top: 20px;
   }
 }
-.order-custo {
+.dish-custo {
+  margin-top: 50px;
   table {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
     border-collapse: collapse;
   }
   td {
-    padding: 20px 50px;
+    padding: 14px;
     border-bottom: 1px solid;
     border-top: 1px solid;
     font-size: 18px;
@@ -94,8 +95,43 @@
 }
 .order-total > div {
   margin-top: 10px;
-  padding: 16px;
-  font-size: 50px;
+  padding: 12px;
+  font-size: 36px;
   text-align: center;
-  background-color: var(--Accent-1);
+  color: aliceblue;
+  background-color: var(--Accent-2);
+}
+.order-delivery > .btn-yes {
+  width: 100%;
+  margin-top: 30px;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+.order-form {
+  .form-body {
+    gap: 20px;
+  }
+}
+.order-summary {
+  margin-top: 100px;
+  .deli-info, .sum-qty {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .deli-cut {
+    display: flex;
+    justify-content: space-between;
+    gap: 16%;
+    input {
+      width: 25px;
+    }
+  }
+}
+.hr {
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--Accent-2);
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Deposit = () => {
   // const [payMethod, setPayMethod] = useState("");
@@ -12,6 +13,12 @@ const Deposit = () => {
     // ));
     setShowPay(!showPay);
   }
+
+  const navigate = useNavigate();
+  function handleSubmit(e) {
+    navigate("/reservations/5");
+  }
+
   return (
     <div className='page-body'>
       <h2>Pay A Deposit</h2>
@@ -55,9 +62,9 @@ const Deposit = () => {
           </div> 
           <p>Note: Deposit will be deducted from the bill.</p>
         </div>
-        <Link to="/success">
-          <button className='btn-yes'>Pay deposit</button>
-        </Link>
+
+        <button className='btn-yes' onClick={handleSubmit}
+          >Pay deposit</button>
 
       </div>
     </div>

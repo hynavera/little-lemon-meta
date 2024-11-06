@@ -115,12 +115,13 @@
   padding: 0 0 100px 0;
 }
 .success-page > h1 {
-  margin-top: 20px;
+  margin-top: 50px;
 }
-.success-page h3 {
+.success-page p {
   color: white;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 8px;
 }
 .congrats-img {
   width: 50vw;

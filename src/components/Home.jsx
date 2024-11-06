@@ -42,7 +42,7 @@ export default function Home() {
            We focus on fresh produce and big flavours, offering bespoke cocktails and a premium wine selection.
             </p>
             <Link to="/reservations">
-              <button className='btn-yes'>Reserve Table</button>
+              <button className='btn-yes'>Reserve a Table</button>
             </Link>
           </div>
           <div className="hero-img">
