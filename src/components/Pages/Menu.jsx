@@ -15,6 +15,7 @@ const Menu = () => {
   const displayedDishes = typeFilter ? dishes.filter(dish => dish.type === typeFilter) : dishes
 
   const specialDishes = displayedDishes.map(dish => (
+    <div className="col l-3 p-2">
     <div key={dish.name} className="dish-card">
       <Link 
         to={dish.id} 
@@ -37,6 +38,7 @@ const Menu = () => {
         </div>
       </Link>
     </div>
+    </div>
   ))
 
   function handleFilterChange(key, value) {
@@ -56,10 +58,10 @@ const Menu = () => {
     <div className="page-head">
       <h1>Our Menu</h1>
     </div>
-    <div className="page-body menu">
+    <div className="page-body menu ">
       <div>
-        <h3>EXPLORE OUR DISHES</h3> <br />
-        <div className='menu-tab'>
+        <h3 className='col'>EXPLORE OUR DISHES</h3> <br />
+        <div className='menu-tab row col'>
           <button className={`btn-menu ${typeFilter === null ? "selected" : null}`} onClick={() => handleFilterChange("type", null)}
           >All</button>
           <button className={`btn-menu ${typeFilter === "1" ? "selected" : null}`} onClick={() => handleFilterChange("type", 1)}
@@ -70,7 +72,7 @@ const Menu = () => {
           >Desserts</button>
         </div>
       </div>
-      <div className='dish-layout'>
+      <div className='dish-layout row'>
         {specialDishes}
       </div>
     </div>

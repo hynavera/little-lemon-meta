@@ -1,13 +1,10 @@
 /* MENU */
 .dish-layout {
   margin: 30px 0 50px 0;
-  display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 30px;
 }
 .dish-layout .dish-card {
-  width: 280px;
+  /* width: 280px; */
 }
 .dish-card > a {
   text-decoration: none;
@@ -15,7 +12,6 @@
   cursor: default;
 }
 .menu-tab {
-  display: flex;
   gap: 10px;
 }
 .btn-menu {
@@ -42,14 +38,12 @@
 
 /* ORDER */
 .order-layout {
-  display: flex;
   align-items: flex-start;
   margin-top: 20px;
-  gap: 10%;
-  padding: 20px;
+  margin-bottom: 100px;
 }
 .order-dish {
-  width: 45%;
+  margin-bottom: 100px;
   .card-img {
     border-radius: 16px;
     overflow: hidden;
@@ -107,11 +101,6 @@
   a {
     text-decoration: none;
     color: black;
-  }
-}
-.order-form {
-  .form-body {
-    gap: 20px;
   }
 }
 .order-summary {

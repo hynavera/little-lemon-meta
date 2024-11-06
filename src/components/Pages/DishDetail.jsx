@@ -51,19 +51,19 @@ const DishDetail = () => {
       <h1>Order Online</h1>
     </div>
     <div className="page-body">
-      <div>
+      <div className='col'>
         <h3>ORDER FOR DELIVERY!</h3> <br />
       </div>
-      <div>
+      <div className='col'>
         <Link to={`..${search}`}
           relative='path'
           className="back-button">
           &larr; <span>Back to All Menu</span>
         </Link>
       </div>
-      <div className='order-layout'>
+      <div className='order-layout row'>
         {dish ? (
-          <div className='order-dish'>
+          <div className='order-dish col l-6 p-4'>
             <div className='order-dish-info'>
               <div className="card-img">
                 <img src={dish.image}/>
@@ -129,35 +129,39 @@ const DishDetail = () => {
               </div>
             </div>   
           ) : ""}
-        <div className='order-delivery'>
+        <div className='order-delivery col l-0-1 l-5 p-4'>
           <div className="order-form">
-            <form action="" className='form-body' onSubmit={handleSubmit}>
-              <h3>ADD YOUR INFO</h3>
-              <div className="form-group">
-                <label htmlFor="name">Name</label>
-                <input type="text" placeholder='Type here...' name='name' value={contact.name} onChange={handleChange}/>
-              </div>
-              <div className="form-group">
-                <label htmlFor="address">Address</label>
-                <input type="text" placeholder='Type here...' name='address' value={contact.address} onChange={handleChange}/>
-              </div>
-              <div className="form-group">
-                <label htmlFor="phone">Phone number</label>
-                <input type="tel" placeholder='Type here...' name='phone' value={contact.phone} onChange={handleChange}/>
-              </div>
-              <br />
-              <h3>ADD YOUR PAYMENT</h3>
-              <div className="form-group">
-                <label htmlFor="card">Card number</label>
-                <input name='card' type="tel"  maxLength="19"  placeholder="XXXX XXXX XXXX XXXX"/>
-              </div>
-              <div className="form-group">
-                <label htmlFor="exp">Expiration date</label>
-                <input name='exp' type="tel" maxLength="5" placeholder="MM/YY"/>
-              </div>
-              <div className="form-group">
-                <label htmlFor="cvc">CVC/CVV</label>
-                <input name='cvc' type="tel" maxLength="3" placeholder="***"/>
+            <form action="" className='form-body row' onSubmit={handleSubmit}>
+              <div className='form-layout row'>
+              <div className="column-group col l-12 p-4">
+                  <h3>ADD YOUR INFO</h3>
+                  <div className="form-group">
+                    <label htmlFor="name">Name</label>
+                    <input type="text" placeholder='Type here...' name='name' value={contact.name} onChange={handleChange}/>
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="address">Address</label>
+                    <input type="text" placeholder='Type here...' name='address' value={contact.address} onChange={handleChange}/>
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="phone">Phone number</label>
+                    <input type="tel" placeholder='Type here...' name='phone' value={contact.phone} onChange={handleChange}/>
+                  </div>
+                  <br />
+                  <h3>ADD YOUR PAYMENT</h3>
+                  <div className="form-group">
+                    <label htmlFor="card">Card number</label>
+                    <input name='card' type="tel"  maxLength="19"  placeholder="XXXX XXXX XXXX XXXX"/>
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="exp">Expiration date</label>
+                    <input name='exp' type="tel" maxLength="5" placeholder="MM/YY"/>
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="cvc">CVC/CVV</label>
+                    <input name='cvc' type="tel" maxLength="3" placeholder="***"/>
+                  </div>
+                </div>
               </div>
             </form>
           </div>
@@ -177,7 +181,7 @@ const DishDetail = () => {
               <input type="checkbox" />
             </div>
             <div className="hr"></div>
-            <br /> <br />
+            <br /> <br /><br />
             <h3>SUMMARY</h3>
             <div className="hr"></div>
             {dish ? (
@@ -219,6 +223,7 @@ const DishDetail = () => {
           <button className='btn-yes'>
             <Link to="/menu/order">Checkout</Link>
           </button>
+          
         </div>
       </div>
     </div>

@@ -35,28 +35,33 @@ export default function Home() {
     <>
       <div className=''>
         <div className='hero'>
-          <div className='hero-info'>
-            <h1>Little Lemon</h1>
-            <h2>Chicago</h2>
-            <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
-           We focus on fresh produce and big flavours, offering bespoke cocktails and a premium wine selection.
-            </p>
-            <Link to="/reservations">
-              <button className='btn-yes'>Reserve a Table</button>
-            </Link>
-          </div>
-          <div className="hero-img">
-            <img src="https://cdn.pixabay.com/photo/2023/09/07/15/37/ai-generated-8239337_1280.png" alt='Logo of Little Lemon'/>
+          <div className="wide">
+            <div className="row">
+            <div className='hero-info col l-6 p-3'>
+              <h1>Little Lemon</h1>
+              <h2>Chicago</h2>
+              <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
+            We focus on fresh produce and big flavours, offering bespoke cocktails and a premium wine selection.
+              </p>
+              <Link to="/reservations">
+                <button className='btn-yes'>Reserve a Table</button>
+              </Link>
+            </div>
+            <div className="hero-img col l-0-1 l-5 p-0">
+              <img src="https://cdn.pixabay.com/photo/2023/09/07/15/37/ai-generated-8239337_1280.png" alt='Logo of Little Lemon'/>
+            </div>
+            </div>
           </div>
         </div>
-        <div className="body specials">
-          <div className="special-head">
-            <h2>Specials Today!</h2>
-            <Link to="/menu">  <button className="btn-yes">Online Menu</button></Link>
+        <div className="wide specials">
+          <div className="special-head row">
+            <h2 className='col'>Specials Today!</h2>
+            <Link to="/menu" className='col'>  <button className="btn-yes">Online Menu</button></Link>
           </div>
-          <div className='special-dish'>
+          <div className='special-dish row'>
             {specials.map(dish => (
-              <div key={dish.name} className="dish-card">
+              <div key={dish.name} className="col l-3 p-2">
+                <div className="dish-card ">
                 <div className="card-img">
                   <img src={dish.image} alt="special-dish" />
                 </div>
@@ -72,15 +77,17 @@ export default function Home() {
                     <Link to={`/menu/${dish.id}`}>Order Now</Link>
                   </button>
                 </div>
+                </div>
               </div>
             ))}
           </div>
         </div>
-        <div className="body testimonials">
-          <h2>Testimonials</h2>
-          <div className='testi-layout'>
+        <div className="testimonials">
+          <div className="wide">
+          <h2 className='col l-12'>Testimonials</h2>
+          <div className='testi-layout row'>
             {testimonials.map(review => (
-            <div className="testi-card" key={review.name}>
+            <div className="testi-card col l-0-1 l-4 p-2" key={review.name}>
               <div className="testi-name">
                 <img src={review.img} className='testi-img'/>
                 <div>
@@ -98,9 +105,11 @@ export default function Home() {
             </div>
             ))}
           </div>
+          </div>
         </div>
-        <div className='body about'>
-          <div className='about-info'>
+        <div className='wide about'>
+          <div className="row">
+          <div className='about-info col l-6 p-4'>
             <h2>Our Story</h2> <br />
             <p>Immerse yourself in a culinary experience like no other at Little Lemon, a vibrant bar and small plates restaurant nestled in the heart of Dublin, Ireland.            
             </p>
@@ -110,14 +119,16 @@ export default function Home() {
             <br />
             <p>At Little Lemon, we believe that great things come in small packages. Little Lemon is a Mediterranean-inspired cocktail and wine bar that takes pride in offering a tantalizing menu centered around fresh seafood, succulent meats, flavorful charcuterie, and locally sourced ingredients.
             </p>
+            <br />
           </div>
-          <div className="about-img-contain">
+          <div className="about-img-contain col l-0-1 l-5 p-4">
             <div className="about-img" id='img1'>
               <img src="https://cdn.pixabay.com/photo/2024/01/20/12/31/ai-generated-8520996_1280.png" />
             </div>
             <div className="about-img" id='img2'>
               <img src="https://cdn.pixabay.com/photo/2016/11/08/06/45/couple-1807617_1280.jpg" />
             </div>
+          </div>
           </div>
         </div>
 

@@ -7,8 +7,9 @@ const About = () => {
     <div className="page-head">
       <h1>About Us</h1>
     </div>
-    <div className='page-body about'>
-      <div className='about-info'>
+    <div className='wide about'>
+      <div className="row">
+      <div className='about-info col l-6 p-4'>
         <h2>Our Story</h2>
         <br />
         <p>Immerse yourself in a culinary experience like no other at Little Lemon, a vibrant bar and small plates restaurant nestled in the heart of Dublin, Ireland.            
@@ -21,14 +22,16 @@ const About = () => {
         </p>
         <br /><p>Our chefs skillfully craft dishes that highlight the natural flavors of high-quality ingredients, ensuring a remarkable dining experience. From ocean-fresh seafood to perfectly grilled meats, every bite at Little Lemon is a celebration of Mediterranean cuisine. Our commitment to using locally sourced ingredients guarantees freshness and showcases the region's best. Join us at Little Lemon and indulge in a memorable dining experience where Mediterranean flavors take center stage.
         </p>
+        <br />
       </div>
-      <div className="about-img-contain">
+      <div className="about-img-contain col l-0-1 l-5 p-4">
         <div className="about-img" id='img1'>
           <img src="https://cdn.pixabay.com/photo/2024/01/20/12/31/ai-generated-8520996_1280.png" alt=''/>
         </div>
         <div className="about-img" id='img2'>
           <img src="https://cdn.pixabay.com/photo/2023/09/07/15/37/ai-generated-8239337_1280.png" alt=''/>
         </div>
+      </div>
       </div>
     </div>
 
