@@ -185,7 +185,6 @@ p {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border-bottom: 2px dashed var(--Accent-2);
 }
 .testi-star svg {
   width: 20px;
@@ -209,6 +208,7 @@ p {
 }
 .testi-content {
   font-weight: 350;
+  border-top: 2px dashed var(--Accent-2);
 }
 
 
