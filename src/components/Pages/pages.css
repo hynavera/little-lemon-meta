@@ -47,7 +47,7 @@
   .card-img {
     border-radius: 16px;
     overflow: hidden;
-    height: 40vh;
+    height: 50vh;
   }
   .dish-info {
     margin-top: 20px;
@@ -90,7 +90,7 @@
 .order-total > div {
   margin-top: 10px;
   padding: 12px;
-  font-size: 36px;
+  font-size: 28px;
   text-align: center;
   color: var(--Accent-2);
   border: 2px dashed var(--Accent-2);

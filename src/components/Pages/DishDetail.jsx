@@ -72,7 +72,15 @@ const DishDetail = () => {
                 <h2>{dish.name}</h2>
                 <h3 style={{display: "flex", gap: "5px", alignItems: "baseline", color: "var(--Accent-2"}}><p>$</p>{dish.price}</h3>
                 <div>
+                  <br />
                   <p>{dish.description}</p>
+                  <br />
+                  <p>The meal is including:</p>
+                  <ul style={{paddingLeft: "5%", fontSize: "18px", lineHeight: "2"}}>
+                    <li>{dish.include[0]}</li>
+                    <li>{dish.include[1]}</li>
+                    <li>{dish.include[2]}</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -124,7 +132,7 @@ const DishDetail = () => {
                 <br />
                 <div className="order-total">
                   <h3>Subtotal ($)</h3>
-                  <div>{quantity * dish.price + selectedAddOn.price}</div>
+                  <div>{(quantity * dish.price + selectedAddOn.price).toFixed(2)}</div>
                 </div>
               </div>
             </div>   
@@ -190,7 +198,7 @@ const DishDetail = () => {
                   <p><b>Items</b></p>
                   <div className="sum-qty">
                     <p>{quantity} x {dish.name}</p>
-                    <p>$ {quantity * dish.price}</p>
+                    <p>$ {(quantity * dish.price).toFixed(2)}</p>
                   </div>
                   {selectedAddOn.name ? (
                   <div className="sum-qty">
@@ -202,7 +210,7 @@ const DishDetail = () => {
                 <div className="hr"></div>
                 <div className="sum-qty">
                   <p><b>Subtotal</b></p>
-                  <p><b>$ {quantity * dish.price + selectedAddOn.price}</b></p>
+                  <p><b>$ {(quantity * dish.price + selectedAddOn.price).toFixed(2)}</b></p>
                 </div>
                 <div className="sum-qty">
                   <p><b>Delivery</b></p>
@@ -215,7 +223,7 @@ const DishDetail = () => {
                 <div className="hr"></div>
                 <div className="sum-qty">
                   <h3><b>TOTAL</b></h3>
-                  <h3><b>$ {quantity * dish.price + selectedAddOn.price + 3}</b></h3>
+                  <h3><b>$ {(quantity * dish.price + selectedAddOn.price + 3).toFixed(2)}</b></h3>
                 </div>
               </div>
             ) : ""}
