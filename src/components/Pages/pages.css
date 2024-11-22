@@ -92,8 +92,9 @@
   padding: 12px;
   font-size: 36px;
   text-align: center;
-  color: aliceblue;
-  background-color: var(--Accent-2);
+  color: var(--Accent-2);
+  border: 2px dashed var(--Accent-2);
+  border-radius: 16px;
 }
 .order-delivery > .btn-yes {
   width: 100%;

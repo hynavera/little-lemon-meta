@@ -53,6 +53,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div style={{height: "10vh"}}></div>
         <div className="wide specials">
           <div className="special-head row">
             <h2 className='col'>Specials Today!</h2>
