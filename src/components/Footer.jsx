@@ -33,7 +33,7 @@ export default function Footer() {
           <li>Metaverse</li>
         </ul>
       <div className="copyright">
-        <p>Designed & Developed by Hynamerie | Meta Front-End Developer.</p>
+        <p>Designed & Developed by Hynavera | Meta Front-End Developer.</p>
       </div>
       </div>
     </div>
