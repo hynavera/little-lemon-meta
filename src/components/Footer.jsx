@@ -1,22 +1,15 @@
 import React from 'react';
 import logoFooter from "../assets/small_logo.png"
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
     <div className='footer'>
-      <div className="logo-footer">
+      <div className="footer-in">
+      <div className="logo-footer col l-2 p-2">
         <img src={logoFooter} alt="" />
       </div>
-      <div className='pages-footer'>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Reservations</a></li>
-          <li><a href="">Order Online</a></li>
-          <li><a href="">Login</a></li>
-        </ul>
-        <ul>
+        <ul className='col l-0-3 l-3 p-2'>
           <li>Address: <br/>
           214 Magazine St, <br /> New Orleans, Louisiana
           </li>
@@ -26,12 +19,22 @@ export default function Footer() {
           <li>Email: <br />
             little-lemon@meta.com
           </li>
+          <br /><br />
         </ul>
-        <ul>
-          <li><a href="">Facebook</a></li>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Youtube</a></li>
+        <ul className='col l-2 p-2'>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/menu">Menu</Link></li>
+          <li><Link to="/reservations">Reservations</Link></li>
         </ul>
+        <ul className='col l-2 p-2'>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Metaverse</li>
+        </ul>
+      <div className="copyright">
+        <p>Designed & Developed by Hynavera | Meta Front-End Developer.</p>
+      </div>
       </div>
     </div>
   )

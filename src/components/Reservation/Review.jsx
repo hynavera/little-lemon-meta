@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Review = () => {
   const [reserveData, setReserveData] = useState(null);
@@ -18,12 +18,17 @@ const Review = () => {
     }
   }, [])
 
+  const navigate = useNavigate();
+  function handleSubmit(e) {
+    navigate("/reservations/4");
+  }
+
   return (
     <div className="page-body">
-    <h2>Reservation Review</h2>
-    <div className='form-body'>
-      <div className='form-layout'>
-      <div className="column-group">
+    <h2 className='col'>Reservation Review</h2>
+    <div className='form-body row'>
+      <div className='form-layout row'>
+      <div className="column-group col l-5 p-4">
         <div className="form-group">
           <label>Reservation details</label>
           <div className='details'>
@@ -40,7 +45,7 @@ const Review = () => {
           </div>
         </div>
       </div>
-      <div className="column-group">
+      <div className="column-group col l-0-1 l-5 p-4">
         <div className="form-group">
           <label >Contact info</label>
           <div className='details'>
@@ -56,9 +61,7 @@ const Review = () => {
         </div>
       </div>
       </div>
-      <Link to="/reservations/4">
-        <button className='btn-yes'>Pay deposit</button>
-      </Link>
+        <button className='btn-yes' onClick={handleSubmit}>Pay deposit</button>
     </div>
   </div>
 

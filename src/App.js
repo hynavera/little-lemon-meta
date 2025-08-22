@@ -11,8 +11,9 @@ import Deposit from './components/Reservation/Deposit';
 import Congrats from './components/Reservation/Congrats';
 import About from './components/Pages/About';
 import Menu from './components/Pages/Menu';
-import Page from './components/Pages/Page';
 import "./server";
+import DishDetail from './components/Pages/DishDetail';
+import DishCongrats from './components/Pages/DishCongrats';
 
 function App() {
   return (
@@ -26,10 +27,11 @@ function App() {
           <Route path='/reservations/3' element={<Review />}/>
           <Route path='/reservations/4' element={<Deposit />}/>
         </Route>
-        <Route path='/success' element={<Congrats/>} />
+        <Route path='/reservations/5' element={<Congrats/>} />
         <Route path='/about' element={<About/>}/>
         <Route path='/menu' element={<Menu/>}/>
-        <Route path='/page' element={<Page/>}/>
+        <Route path='menu/:id' element={<DishDetail/>} />
+        <Route path='menu/order' element={<DishCongrats/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

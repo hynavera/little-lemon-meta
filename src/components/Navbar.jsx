@@ -38,8 +38,6 @@ export default function Navbar() {
           <li onClick={checkHandler}>
             <Link to="/reservations">Reservations</Link>
             </li>
-          <li><Link to="/page">Order Online</Link></li>
-          <li><Link to="/page">Login</Link></li>
         </ul>
       </nav>
     </div>

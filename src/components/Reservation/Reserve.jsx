@@ -32,10 +32,10 @@ const Reserve = () => {
   return (
     <div>
       <div className="page-body">
-        <h2>Restaurant Reservation</h2>
-        <form action="" className='form-body' onSubmit={handleSubmit}>
-          <div className='form-layout'>
-          <div className="column-group">
+        <h2 className='col'>Reserve Tables</h2>
+        <form action="" className='form-body row' onSubmit={handleSubmit}>
+          <div className='form-layout row'>
+          <div className="column-group col l-4 p-4">
             <div className="form-group">
               <label htmlFor="date">Select a day</label>
               <input type="date" name='date' value={reservation.date} onChange={handleChange}/>
@@ -45,7 +45,7 @@ const Reserve = () => {
               <input type="time" name='time' value={reservation.time} onChange={handleChange}/>
             </div>
           </div>
-          <div className="column-group">
+          <div className="column-group col l-0-1 l-4 p-4">
             <div className="form-group">
               <label htmlFor="dinners">Number of dinners</label>
               <input type="number" placeholder='Type a number here...'

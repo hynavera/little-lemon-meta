@@ -1,0 +1,247 @@
+.hero1 {
+  overflow: hidden;
+  position: relative;
+  /* z-index: 1; */
+  .wide {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.hero1-img {
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+}
+.hero-img-animation-1,
+.hero-img-animation-2,
+.hero-img-animation-3 {
+  transform: translate(-200%, 200%) rotate(-180deg);
+  transition: 1s ease-in-out; 
+}
+.hero-img-animation-1.active,
+.hero-img-animation-2.active,
+.hero-img-animation-3.active {
+  transform: translate(0, 0) scale(1.2);
+  transition: 1.5s ease-in-out 0.5s; 
+}
+
+.hero1-menu {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  button {
+    margin-top: 10px;
+  }
+}
+.hero1-circle-row {
+  padding-top: 0.5em;
+  gap: 1em;
+}
+.hero1-circle {
+  clip-path: circle(50% at 50% 50%);
+  width: 4.1em;
+  height: 4.1em;
+  background: var(--Accent-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  img {
+    clip-path: circle(50% at 50% 50%);
+    width: 4em;
+    height: 4em;
+  }
+  .herobtn.active {
+    width: 3.8em;
+    height: 3.8em;
+  }
+}
+
+
+
+
+
+
+.hero1-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+  height: 100vh;
+  width: 100%;
+  background: url("https://cdn.pixabay.com/photo/2016/11/23/13/45/celebration-1852926_960_720.jpg") no-repeat top;
+  background-size: cover;
+}
+.hero1-background-1 {
+  background-color: var(--Accent-2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  opacity: 80%;
+}
+.events1 {
+  /* background-color: var(--ac1); */
+  position: relative;
+  z-index: 1;
+  
+  h2 {
+    color: var(--Accent-1);
+  }
+  h4, p {
+    color: var(--Accent-1);
+  }
+  .event1-row {
+    padding: 1rem 0;
+    align-items: center;
+  }
+  .order1-img {
+    left: 50%;
+    width: 45vw;
+    img {
+      height: 90%;
+      width: 85%;
+      border-radius: 48px;
+    }
+  }
+}
+.order1-img {
+  border-radius: 48px;
+  overflow: hidden;
+  height: 70vh;
+  width: 60vw;
+  position: absolute;
+  right: 50%;
+  z-index: 1;
+  img {
+    object-fit: cover;
+    /* object-position: left bottom; */
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#ev-im1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.7;
+}
+#ev-im2 {
+  position: absolute;
+  left: 1em;
+  bottom: 0;
+}
+
+
+.faq-wide  {
+  padding: 4rem 0;
+}
+.faq-wide > .row {
+  padding-bottom: 4rem;
+  .p0 {
+    margin-bottom: 12px;
+  }
+}
+.faq-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.faq-qt {
+  padding: 20px;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #353232;
+  cursor: pointer;
+  .ques, .ans {
+    width: 90%;
+  }
+}
+.ans {
+  display: none;
+}
+.faq-qt:hover {
+  align-items: flex-start;
+  .ques {
+    display: none;
+  }
+  .ans {
+    display: block;
+  }
+  .arr {
+    transform: rotate(180deg);
+    transition: 0.3s ease-in;
+  }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .hero1 {
+    position: relative;
+    padding-top: 12vh;
+  }
+  .hero1-img {
+    position: absolute;
+    bottom: 5%;
+    right: -20%;
+    height: 50vh;
+  }
+  .hero1-menu {
+    height: auto;
+    button {
+      margin-top: 0 !important;
+    }
+  }
+  .hero1-circle-row {
+    padding-top: 0.5em;
+    gap: 0.5em;
+  }
+  .hero1-circle {
+    width: 2.5em;
+    height: 2.5em;
+    img {
+      width: 2.5em;
+      height: 2.5em;
+    }
+  }
+  .herobtn.active {
+    width: 2.3em !important;
+    height: 2.3em !important;
+  }
+
+  .order1-row {
+    min-height: auto;
+    .hero-menu {
+      margin-top: 50px;
+    }
+  }
+  .order1-img {
+    position: static;
+    border-radius: 0;
+    height: 25vh;
+  }
+  .events1 {
+    .event1-row {
+      padding: 3rem 0;
+      gap: 50px;
+    }
+    .order1-img {
+      position: relative;
+      width: 100%;
+      height: 40vh;
+      left: 0;
+    }
+  }
+}

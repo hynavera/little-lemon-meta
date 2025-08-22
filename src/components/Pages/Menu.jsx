@@ -5,7 +5,7 @@ import { useSearchParams, Link } from 'react-router-dom';
 const Menu = () => {
   const [dishes, setDishes] = useState([]);
   useEffect(() => {
-    fetch("/api/dishes")
+    fetch(`/api/dishes`)
     .then(res => res.json())
     .then((data => setDishes(data.dishes)))
   }, [])
@@ -15,12 +15,12 @@ const Menu = () => {
   const displayedDishes = typeFilter ? dishes.filter(dish => dish.type === typeFilter) : dishes
 
   const specialDishes = displayedDishes.map(dish => (
+    <div className="col l-3 p-2">
     <div key={dish.name} className="dish-card">
-      <Link to={dish.name} 
+      <Link 
+        to={dish.id} 
         state={{
-          // search: `?${searchParams.toString()}`, type: typeFilter
-          search: searchParams, type: typeFilter
-
+        search: `?${searchParams.toString()}`, type: typeFilter
         }}
       >
         <div className="card-img">
@@ -29,7 +29,7 @@ const Menu = () => {
         <div className="card-info">
           <div className="card-name">
             <h3>{dish.name}</h3>
-            <div className='price'>{dish.price}</div>
+            <div className='price' style={{display: "flex", gap: "5px", alignItems: "baseline"}}><p>$</p>{dish.price}</div>
           </div>
           <div className='card-description'>
             <p>{dish.description}</p>
@@ -37,6 +37,7 @@ const Menu = () => {
           <button>Order Now</button>
         </div>
       </Link>
+    </div>
     </div>
   ))
 
@@ -57,10 +58,10 @@ const Menu = () => {
     <div className="page-head">
       <h1>Our Menu</h1>
     </div>
-    <div className="body menu">
+    <div className="page-body menu ">
       <div>
-        <h2>Expore our dishes</h2>
-        <div className='menu-tab'>
+        <h3 className='col'>EXPLORE OUR DISHES</h3> <br />
+        <div className='menu-tab row col'>
           <button className={`btn-menu ${typeFilter === null ? "selected" : null}`} onClick={() => handleFilterChange("type", null)}
           >All</button>
           <button className={`btn-menu ${typeFilter === "1" ? "selected" : null}`} onClick={() => handleFilterChange("type", 1)}
@@ -71,7 +72,7 @@ const Menu = () => {
           >Desserts</button>
         </div>
       </div>
-      <div className='dish-layout'>
+      <div className='dish-layout row'>
         {specialDishes}
       </div>
     </div>

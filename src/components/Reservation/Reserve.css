@@ -3,35 +3,35 @@
   width: 100%;
   background-color: var(--Accent-2);
   text-align: center;
-  padding: 20px;
+  padding: 50px;
 }
 .page-body {
-  margin-top: 20px;
-  padding: 20px 12vw 100px 12vw;
+  padding: 20px 0;
+  max-width: 1366px;
+  margin: 20px auto;
 }
 .page-body > h2 {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .form-body {
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 30px;
+  gap: 50px;
+  min-height: 60vh;
 }
 .form-layout {
-  display: flex;
-  justify-content: flex-start;
-  gap: 5vw;
+  gap: 40px 0;
+  width: 100%;
 }
 .column-group {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
 }
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
 }
 .form-group label {
   display: block;
@@ -40,7 +40,8 @@
 }
 .form-group input, select {
   padding: 10px;
-  width: 30vw;
+  width: 100%;
+  height: 50px;
   border-radius: 16px;
   border: 2px solid var(--Accent-2);
   font-size: 16px;
@@ -49,44 +50,40 @@
   border: 2px solid var(--Accent-2);
   border-radius: 16px;
   padding: 20px 12px;
-  width: 30vw;
   position: relative;
 }
 .details li {
-  padding: 6px;
+  margin-left: 30px;
+  padding: 16px;
+  font-size: 18px;
+  overflow-wrap: break-word;
 }
 .edit-icon {
   color: var(--Accent-2);
   font-size: large;
   cursor: pointer;
-  width: 20px;
+  width: 30px;
   position: absolute;
   right: 2%;
-  top: 4%;
+  top: 16px;
 }
 
 /* Payment */
-.pay-rule {
-  width: 50vw;
+.deposit {
+  margin-bottom: 100px;
 }
 .pay-img {
-  position: absolute;
-  right: 15%;
-  width: 20vw;
-  height: 50vh;
+  height: 70vh;
 }
 .pay-img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 16px;
 }
 .pay-devider {
   height: 5px;
   background-color: var(--Accent-2);
-  width: 30vw;
-}
-.deposit-cost {
-  width: 30vw;
 }
 .pay-cost {
   display: flex;
@@ -96,7 +93,7 @@
   margin-top: 10px;
 }
 .pay-form .form-group {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 /* Success */
@@ -110,15 +107,16 @@
   padding: 0 0 100px 0;
 }
 .success-page > h1 {
-  margin-top: 20px;
+  margin-top: 50px;
 }
-.success-page h3 {
+.success-page p {
   color: white;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 8px;
 }
 .congrats-img {
-  width: 60vw;
+  width: 50vw;
   height: 50vh;
   border-radius: 16px;
   overflow: hidden;
@@ -127,4 +125,7 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+.form-body > .btn-yes {
+  margin-left: 12px;
 }
