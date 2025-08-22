@@ -9,6 +9,10 @@ import rvImg3 from "../assets/u3.jpg"
 import rvImg4 from "../assets/u4.jpg"
 import { Link } from 'react-router-dom';
 
+import Hero from './Landing/Hero';
+import Faq from './Landing/Faq';
+
+
 export default function Home() {
   const specials = [
     {name: 'Greek Salad', price: '12.99', description: 'The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. ',
@@ -34,7 +38,7 @@ export default function Home() {
   return (
     <>
       <div className=''>
-        <div className='hero'>
+        <section className='hero'>
           <div className="wide">
             <div className="row">
             <div className='hero-info col l-6 p-3'>
@@ -52,9 +56,14 @@ export default function Home() {
             </div>
             </div>
           </div>
-        </div>
+        </section>
+
+
         <div style={{height: "10vh"}}></div>
-        <div className="wide specials">
+
+        <Hero/>
+
+        <section className="wide specials">
           <div className="special-head row">
             <h2 className='col'>Specials Today!</h2>
             <Link to="/menu" className='col'>  <button className="btn-yes">Online Menu</button></Link>
@@ -82,8 +91,9 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
-        <div className="testimonials">
+        </section>
+
+        <section className="testimonials">
           <div className="wide">
           <h2 className='col l-12'>Testimonials</h2>
           <div className='testi-layout row'>
@@ -107,8 +117,9 @@ export default function Home() {
             ))}
           </div>
           </div>
-        </div>
-        <div className='wide about'>
+        </section>
+        
+        <section className='wide about'>
           <div className="row">
           <div className='about-info col l-6 p-4'>
             <h2>Our Story</h2> <br />
@@ -131,8 +142,46 @@ export default function Home() {
             </div>
           </div>
           </div>
-        </div>
+        </section>
 
+      <section className="events1">
+        <div className="wide">
+          <div className="row event1-row">
+            <div className="col l-6 p-4 hero1-menu">
+              <h4>WEEKEND EVENT</h4>
+              <h2>“Have dinner through the starry night!”</h2>
+              <p>
+              Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt  Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusm od.
+              </p>
+              <div className="row">
+                 <button className='btn-yes col l-6 p-2'>Save the Date</button>
+              </div>
+            </div>
+            <div className="order1-img">
+              <img src="https://cdn.pixabay.com/photo/2025/01/10/10/51/crepe-9323695_1280.png" alt="" id='ev-im1' />
+              <img src="https://cdn.pixabay.com/photo/2016/11/23/13/45/celebration-1852926_960_720.jpg" alt="" id='ev-im2'/>
+            </div>
+
+          </div>
+        </div>
+        <div className="hero1-background"></div>
+        <div className="hero1-background-1"></div>
+      </section>
+
+
+        <div style={{height: "10vh"}}></div>
+
+      <section className="faq wide faq-wide">
+        <div className="row">
+          <div className="col  l-0-2 l-8 p-4">
+            <h3>FAQ</h3>
+            <p className='p0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            </p>
+            <Faq/>
+          </div>
+        </div>    
+      </section>
+      
       </div>
     </>
   )
