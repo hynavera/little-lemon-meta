@@ -57,21 +57,21 @@ const Hero = () => {
         <div className="col l-6 p-4 hero1-img">
           <img 
             src={menu === 1 
-              ? "https://firebasestorage.googleapis.com/v0/b/huyennguyen-dev.appspot.com/o/Coding%2FQuatre-Crepes%2FProperty%201%3Dh1.png?alt=media&token=a117758e-b056-444b-b09a-c2746ca7ea84" 
+              ? "https://firebasestorage.googleapis.com/v0/b/huyennguyen-dev.appspot.com/o/Coding%2Fcrep1.png?alt=media&token=e0461ec0-51f4-478e-998a-42eeb3f67558" 
               : menu === 2 
-                ? "https://firebasestorage.googleapis.com/v0/b/huyennguyen-dev.appspot.com/o/Coding%2FQuatre-Crepes%2FProperty%201%3Dh2.png?alt=media&token=740d610e-85d0-4a35-a5ab-9f5bbb90667a" 
-                : "https://firebasestorage.googleapis.com/v0/b/huyennguyen-dev.appspot.com/o/Coding%2FQuatre-Crepes%2FProperty%201%3Dh3.png?alt=media&token=0194ba1b-8e24-4035-8870-111234834154" 
+                ? "https://firebasestorage.googleapis.com/v0/b/huyennguyen-dev.appspot.com/o/Coding%2Fcrep2.png?alt=media&token=d37569cc-18f5-4aac-bfcb-a98cc185dbf7" 
+                : "https://firebasestorage.googleapis.com/v0/b/huyennguyen-dev.appspot.com/o/Coding%2Fcrepe.png?alt=media&token=915f5a77-a6c7-4c90-9b64-3a0286a943e6" 
             } 
             ref={imgRef}
           />
           {/* {menu === 1 &&
-            <img src="https://firebasestorage.googleapis.com/v0/b/huyennguyen-dev.appspot.com/o/Coding%2FQuatre-Crepes%2FProperty%201%3Dh1.png?alt=media&token=a117758e-b056-444b-b09a-c2746ca7ea84" alt="" />
+            <img src="" alt="" />
           }
           {menu === 2 &&
-            <img src="https://firebasestorage.googleapis.com/v0/b/huyennguyen-dev.appspot.com/o/Coding%2FQuatre-Crepes%2FProperty%201%3Dh2.png?alt=media&token=740d610e-85d0-4a35-a5ab-9f5bbb90667a" alt="" />
+            <img src="" alt="" />
           }
           {menu === 3 &&
-            <img src="https://firebasestorage.googleapis.com/v0/b/huyennguyen-dev.appspot.com/o/Coding%2FQuatre-Crepes%2FProperty%201%3Dh3.png?alt=media&token=0194ba1b-8e24-4035-8870-111234834154" alt="" />
+            <img src="" alt="" />
           } */}
         </div>
         <div className="col l-0-1 l-5 p-3 hero1-menu">

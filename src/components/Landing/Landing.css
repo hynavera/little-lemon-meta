@@ -224,6 +224,11 @@
       height: 2.5em;
     }
   }
+.hero-img-animation-1.active,
+.hero-img-animation-2.active,
+.hero-img-animation-3.active {
+  transform: scale(0.8);
+}
   .herobtn.active {
     width: 2.3em !important;
     height: 2.3em !important;
