@@ -149,9 +149,9 @@ export default function Home() {
           <div className="row event1-row">
             <div className="col l-6 p-4 hero1-menu">
               <h4>WEEKEND EVENT</h4>
-              <h2>“Have dinner through the starry night!”</h2>
+              <h1>“Starry Night Dining”</h1>
               <p>
-              Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt  Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusm od.
+              A five-course dinner will be served using ingredients beloved by our chefs. Participants will be served an aperitif in their rooms before dinner, at the time when the evening stars will appear in the sky. This sumptuous dinner includes many creative dishes only available at Little Lemon, making for a unique experience.
               </p>
               <div className="row">
                  <button className='btn-yes col l-6 p-2'>Save the Date</button>

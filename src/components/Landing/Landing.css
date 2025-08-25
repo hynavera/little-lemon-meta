@@ -26,7 +26,7 @@
 .hero-img-animation-2.active,
 .hero-img-animation-3.active {
   transform: translate(0, 0) scale(1.2);
-  transition: 1.5s ease-in-out 0.5s; 
+  transition: 1.1s ease-in-out 0.5s; 
 }
 
 .hero1-menu {
@@ -37,6 +37,14 @@
   gap: 6px;
   button {
     margin-top: 10px;
+  }
+  h1 {
+    line-height: 0.9;
+    margin-top: 10px;
+    filter: drop-shadow(0 0 1px #000);
+  }
+  h2 {
+    color: var(--Accent-2);
   }
 }
 .hero1-circle-row {
@@ -86,18 +94,15 @@
   z-index: -1;
   height: 100vh;
   width: 100%;
-  opacity: 80%;
+  opacity: 90%;
 }
 .events1 {
   /* background-color: var(--ac1); */
   position: relative;
   z-index: 1;
   
-  h2 {
-    color: var(--Accent-1);
-  }
   h4, p {
-    color: var(--Accent-1);
+    color: aliceblue;
   }
   .event1-row {
     padding: 1rem 0;
@@ -191,6 +196,9 @@
   .hero1 {
     position: relative;
     padding-top: 12vh;
+    .wide {
+      height: 100vh;
+    }
   }
   .hero1-img {
     position: absolute;

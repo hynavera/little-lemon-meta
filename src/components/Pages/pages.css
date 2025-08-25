@@ -29,7 +29,7 @@
   color: var(--Accent-1);
 }
 .btn-menu.selected {
-  background: var(--Accent-1);
+  background: var(--Accent-1) !important;
   color: black;
 }
 .btn-menu.selected:hover {

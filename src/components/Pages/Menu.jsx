@@ -70,6 +70,8 @@ const Menu = () => {
           >Mains</button>
           <button className={`btn-menu ${typeFilter === "3" ? "selected" : null}`} onClick={() => handleFilterChange("type", 3)}
           >Desserts</button>
+          <button className={`btn-menu ${typeFilter === "4" ? "selected" : null}`} onClick={() => handleFilterChange("type", 4)} style={{backgroundColor: "#d90000"}}
+          >(NEW) Crepes</button>
         </div>
       </div>
       <div className='dish-layout row'>

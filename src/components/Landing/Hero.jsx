@@ -1,5 +1,7 @@
 import React, {useEffect, useState, useRef} from 'react'
 import "./Landing.css"
+import { Link } from 'react-router-dom';
+
 const Hero = () => {
   const [menu, setMenu] = useState(1);
   const handleSetMenu1 = () => {
@@ -73,37 +75,39 @@ const Hero = () => {
           } */}
         </div>
         <div className="col l-0-1 l-5 p-3 hero1-menu">
+          <h2>New Releases!</h2>
+          <br /> <br />
           {menu === 1 && <>
             <h4>CREPE DESSERT</h4>
-            <h2>Sweets with cream & fruits</h2>
-            <p>Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt  Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusm od.
+            <h1>Sweets with cream & fruits</h1>
+            <p>Common fillings include hazelnut cocoa spread, preserves, sugar, maple syrup, golden syrup, lemon juice, whipped cream, fruit spreads, custard, and sliced soft fruits or confiture.
             </p>
           </>}
           {menu === 2 && <>
             <h4>SPECIALS-DINNING</h4>
-            <h2>Savory galettes des crepes</h2>
-            <p>Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt  Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusm od.
+            <h1>Savory galettes des crepes</h1>
+            <p>Batter made from buckwheat flour is gluten-free, common savory fillings for crêpes are cheese, ham, and eggs, ratatouille, mushrooms, artichoke, and various meat products.
             </p>
           </>}
           {menu === 3 && <>
             <h4>FULL-TOPPINGS</h4>
-            <h2>Spices, mixes & more dressings</h2>
-            <p>Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt  Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusm od.
+            <h1>Spices, mixes & more dressings</h1>
+            <p>How about make a cke by tacking plain crepes on top of each other, adding a layer of filling between the layers. Add fruit, chocolate, cookies, marshmallows or spices for a creative and delicious treat.
             </p>
           </>}
           <div className="row hero1-circle-row">
             <div className="hero1-circle" onClick={handleSetMenu1}>
-              <img src="https://images.unsplash.com/photo-1667902687249-0dfe266a3b2a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" 
+              <img src="https://images.unsplash.com/photo-1582995570162-9dee25247fda?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" 
                 className={`herobtn ${menu === 1 ? 'active' : ''}`}
               />
             </div>
             <div className="hero1-circle" onClick={handleSetMenu2}>
-              <img src="https://images.unsplash.com/photo-1609501885647-9cf9deffdb23?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" 
+              <img src="https://images.unsplash.com/photo-1667902687249-0dfe266a3b2a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" 
                 className={`herobtn ${menu === 2 ? 'active' : ''}`}
               />
             </div>
             <div className="hero1-circle" onClick={handleSetMenu3}>
-              <img src="https://images.unsplash.com/photo-1582995570162-9dee25247fda?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" 
+              <img src="https://images.unsplash.com/photo-1609501885647-9cf9deffdb23?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" 
                 className={`herobtn ${menu === 3 ? 'active' : ''}`}
               />
             </div>
@@ -112,9 +116,9 @@ const Hero = () => {
             <p>
               Enjoy unique crepes based on French recipes from our newest recepies.
             </p>
-            <div className="row">
-                <button className='btn-yes col l-6 p-2'>View Crepes Menu</button>
-            </div>
+            <Link to='/menu?type=4' className="row" style={{textDecoration: "none"}}>
+                  <button className='btn-yes col l-6 p-2'>View Crepes Menu</button>
+            </Link>
 
         </div>
       </div>
