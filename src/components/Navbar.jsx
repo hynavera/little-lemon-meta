@@ -33,7 +33,7 @@ export default function Navbar() {
             <Link to="/about">About</Link>
             </li>
           <li onClick={checkHandler}>
-            <Link to="/menu">Menu</Link>
+            <Link to="/menu">Menu & Orders</Link>
             </li>
           <li onClick={checkHandler}>
             <Link to="/reservations">Reservations</Link>

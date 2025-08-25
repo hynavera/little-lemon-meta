@@ -177,11 +177,17 @@
 }
 .faq-qt:hover {
   align-items: flex-start;
+  border: solid 2px var(--Accent-2);
+
   .ques {
     display: none;
   }
   .ans {
     display: block;
+    i {
+      color: var(--Accent-2);
+      font-weight: 600;
+    }
   }
   .arr {
     transform: rotate(180deg);

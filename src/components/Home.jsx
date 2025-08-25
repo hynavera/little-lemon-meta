@@ -174,9 +174,10 @@ export default function Home() {
       <section className="faq wide faq-wide">
         <div className="row">
           <div className="col  l-0-2 l-8 p-4">
-            <h3>FAQ</h3>
-            <p className='p0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            <h2>FAQ</h2>
+            <p>Each question addresses common customer concerns, helping you build trust and guide visitors toward making a purchase.
             </p>
+            <br />
             <Faq/>
           </div>
         </div>    
