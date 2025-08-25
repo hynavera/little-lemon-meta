@@ -9,7 +9,7 @@ const Faq = () => {
         <p className='ques'>What are your hours of operation?</p>
         <p className='ans'>
           <i>What are your hours of operation?</i> <br />
-We're open Tuesday through Sunday to serve you better. Our lunch service runs from 11:30 AM to 2:30 PM, and dinner service is from 5:00 PM to 10:00 PM (11:00 PM on Fridays and Saturdays). Our bar remains open an hour later than the kitchen. While we're closed on Mondays for team training and menu development, our online reservation system is always available. During major holidays, we may adjust our hours, which we'll announce on our website and social media channels.        </p>
+We're open Tuesday through Sunday to serve you better. While we're closed on Mondays for team training and menu development, our online reservation system is always available. During major holidays, we may adjust our hours, which we'll announce on our website and social media channels.        </p>
         <HiOutlineChevronDown className='arr'/>
       </div>
       <div className="faq-qt row">

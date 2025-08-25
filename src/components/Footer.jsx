@@ -22,7 +22,7 @@ export default function Footer() {
           <br /><br />
         </ul>
         <ul className='col l-3 p-2'>
-          <li>Opening hours: <br /> Mon - Sun: 2 PM - 10 PM</li>
+          <li>Opening hours: <br /> Tue - Sun: 11 AM - 10 PM</li>
           <li>Online service hours: <br /> Mon - Sun: 9 AM - 8 PM</li>
         </ul>
         <ul className='col l-2 p-2'>
