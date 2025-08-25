@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/little-lemon-meta/static/css/main.f141d540.css",
-    "main.js": "/little-lemon-meta/static/js/main.817828a7.js",
+    "main.js": "/little-lemon-meta/static/js/main.8e364806.js",
     "static/media/salad.png": "/little-lemon-meta/static/media/salad.d768338339878f7b6356.png",
     "static/media/brucheta.jpg": "/little-lemon-meta/static/media/brucheta.76ffdf955f2513574e6f.jpg",
     "static/media/small_logo.png": "/little-lemon-meta/static/media/small_logo.2c859235d6c57bb54176.png",
@@ -9,10 +9,10 @@
     "static/media/Logo.svg": "/little-lemon-meta/static/media/Logo.fd87fc34e15316b670ea115ce700cd15.svg",
     "index.html": "/little-lemon-meta/index.html",
     "main.f141d540.css.map": "/little-lemon-meta/static/css/main.f141d540.css.map",
-    "main.817828a7.js.map": "/little-lemon-meta/static/js/main.817828a7.js.map"
+    "main.8e364806.js.map": "/little-lemon-meta/static/js/main.8e364806.js.map"
   },
   "entrypoints": [
     "static/css/main.f141d540.css",
-    "static/js/main.817828a7.js"
+    "static/js/main.8e364806.js"
   ]
 }
