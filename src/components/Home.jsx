@@ -43,7 +43,7 @@ export default function Home() {
             <div className="row">
             <div className='hero-info col l-6 p-3'>
               <h1>Little Lemon</h1>
-              <h2>Chicago</h2>
+              <h2>New Orleans</h2>
               <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
             We focus on fresh produce and big flavours, offering bespoke cocktails and a premium wine selection.
               </p>
