@@ -18,15 +18,15 @@ export default function Home() {
     {name: 'Greek Salad', price: '12.99', description: 'The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. ',
       image: imgSalad, id: "greek-salad"
     },
-    {name: 'Bruschetta', price: '7.99', description: 'Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. ',
-      image: imgBrushetta, id: "bruschetta"
-    },
-    {name: 'Lemon Dessert', price: '5.99', description: 'This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.',
+    {name: 'Lemon Cake', price: '5.99', description: 'This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.',
       image: imgLemon, id: "lemon-dessert"
     },
     {name: 'Grilled Fish', price: '7.99', description: 'Salmon and firm, thick white fish like sea bass, red snapper, grouper and halibut are the best types of fish to grill because they are hearty. ',
       image: "https://images.unsplash.com/photo-1615044088186-a2342db7b272?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3JpbGxlZCUyMGZpc2h8ZW58MHx8MHx8fDI%3D",
       id: "grilled-fish"
+    },
+    {name: 'Bruschetta', price: '7.99', description: 'Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. ',
+      image: imgBrushetta, id: "bruschetta"
     },
   ]
   const testimonials = [
@@ -72,6 +72,7 @@ export default function Home() {
             {specials.map(dish => (
               <div key={dish.name} className="col l-3 p-2">
                 <div className="dish-card ">
+                  <div className="card-linear"></div>
                 <div className="card-img">
                   <img src={dish.image} alt="special-dish" />
                 </div>
@@ -83,9 +84,9 @@ export default function Home() {
                   <div className='card-description'>
                     <p>{dish.description}</p>
                   </div>
-                  <button>
-                    <Link to={`/menu/${dish.id}`}>Order Now</Link>
-                  </button>
+                    <Link to={`/menu/${dish.id}`}>
+                    <button>Order Now</button>
+                    </Link>
                 </div>
                 </div>
               </div>
@@ -147,11 +148,11 @@ export default function Home() {
       <section className="events1">
         <div className="wide">
           <div className="row event1-row">
-            <div className="col l-6 p-4 hero1-menu">
+            <div className="col l-5 p-4 hero1-menu">
               <h4>WEEKEND EVENT</h4>
               <h1>“Starry Night Dining”</h1>
               <p>
-              A five-course dinner will be served using ingredients beloved by our chefs. Participants will be served an aperitif in their rooms before dinner, at the time when the evening stars will appear in the sky. This sumptuous dinner includes many creative dishes only available at Little Lemon, making for a unique experience.
+              A five-course dinner will be served using ingredients beloved by our chefs. This sumptuous dinner includes many creative dishes only available at Little Lemon, making for a unique experience.
               </p>
               <div className="row">
                  <button className='btn-yes col l-6 p-2'>Save the Date</button>

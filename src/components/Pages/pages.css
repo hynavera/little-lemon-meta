@@ -6,10 +6,21 @@
 .dish-layout .dish-card {
   /* width: 280px; */
 }
-.dish-card > a {
+.dish-card-link {
   text-decoration: none;
   color: black;
-  cursor: default;
+  cursor: pointer;
+  button {
+    display: none;
+  }
+}
+.dish-card-link:hover {
+  button {
+    display: block;
+  }
+  .price {
+    display: none !important;
+  }
 }
 .menu-tab {
   gap: 10px;

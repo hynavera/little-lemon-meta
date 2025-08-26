@@ -49,7 +49,7 @@ createServer({
       include: ["Campagnarde", "Complete", "Jambon Gruyere"]},
     );
     server.create("dish",
-      {name: 'Lemon Dessert', price: '12.99', description: 'This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.',
+      {name: 'Lemon Cake', price: '12.99', description: 'This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.',
         type: "3",
         image: "https://images.unsplash.com/photo-1595438280062-bab772735ecb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bGVtb24lMjBwaWV8ZW58MHx8MHx8fDI%3D"
       , id: "lemon-dessert",

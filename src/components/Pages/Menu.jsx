@@ -15,29 +15,28 @@ const Menu = () => {
   const displayedDishes = typeFilter ? dishes.filter(dish => dish.type === typeFilter) : dishes
 
   const specialDishes = displayedDishes.map(dish => (
-    <div className="col l-3 p-2">
-    <div key={dish.name} className="dish-card">
-      <Link 
+    <div className="col l-3 p-2" key={dish.name}>
+    <Link  className="dish-card dish-card-link"
         to={dish.id} 
-        state={{
-        search: `?${searchParams.toString()}`, type: typeFilter
-        }}
-      >
+            state={{
+            search: `?${searchParams.toString()}`, type: typeFilter
+        }}>
+                  <div className="card-linear"></div>
         <div className="card-img">
           <img src={dish.image} alt="special-dish" />
         </div>
         <div className="card-info">
           <div className="card-name">
             <h3>{dish.name}</h3>
-            <div className='price' style={{display: "flex", gap: "5px", alignItems: "baseline"}}><p>$</p>{dish.price}</div>
+            {/* <div className='price' style={{display: "flex", gap: "5px", alignItems: "baseline"}}><p>$</p>{dish.price}</div> */}
           </div>
           <div className='card-description'>
             <p>{dish.description}</p>
           </div>
+          <div className='price' style={{display: "flex", gap: "5px", alignItems: "baseline"}}><p>$</p>{dish.price}</div>
           <button>Order Now</button>
         </div>
-      </Link>
-    </div>
+    </Link>
     </div>
   ))
 
